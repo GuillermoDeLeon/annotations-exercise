@@ -3,7 +3,7 @@
  */
 import java.util.ArrayList;
 import java.util.List;
-
+@SuppressWarnings("unchecked") //added this for easy_fix per Vivian
 public class Author extends Person {
     private List books;
 
@@ -13,7 +13,7 @@ public class Author extends Person {
     }
 
     /**
-     * @deprecated Use publishedBooks instead
+     * @deprecated Use publishedBooks instead  {@link #publishedBooks()}
      */
     @Deprecated
     public List<String> getBooks() {
@@ -28,7 +28,7 @@ public class Author extends Person {
         books.add(book);
     }
 
-    @Override
+   // @Override  -->commented this out for the easy_fix per Vivian recommend
     public String sortName() {
         return String.format("%s, %s", lastName, firstName);
     }

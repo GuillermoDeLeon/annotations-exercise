@@ -1,4 +1,6 @@
-@SuppressWarnings("unchecked")
+
+
+@SuppressWarnings("deprecation")  //added this for easy_fix
 
 public class Main {
 //    @SuppressWarnings("all")
